@@ -1,0 +1,32 @@
+<navigation xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    app:startDestination="@id/blankFragment2">
+    <fragment
+        android:id="@+id/blankFragment2"
+        android:name="com.example.fragments.BlankFragment"
+        android:label="fragment_blank"
+        tools:layout="@layout/fragment_blank" >
+        <action
+            android:id="@+id/action_blankFragment2_to_backGroundFragment"
+            app:destination="@id/backGroundFragment" />
+        <action
+            android:id="@+id/action_blankFragment2_to_pressedButtonsFragment"
+            app:destination="@id/pressedButtonsFragment" />
+        <action
+            android:id="@+id/action_blankFragment2_to_toastFragment"
+            app:destination="@id/toastFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/toastFragment"
+        android:name="com.example.fragments.fragments.ToastFragment"
+        android:label="ToastFragment" />
+    <fragment
+        android:id="@+id/pressedButtonsFragment"
+        android:name="com.example.fragments.fragments.PressedButtonsFragment"
+        android:label="PressedButtonsFragment" />
+    <fragment
+        android:id="@+id/backGroundFragment"
+        android:name="com.example.fragments.fragments.BackGroundFragment"
+        android:label="BackGroundFragment" />
+</navigation>
